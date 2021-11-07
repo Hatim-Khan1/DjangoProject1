@@ -1,0 +1,17 @@
+{%extends 'base.html'%}
+{%block content %}
+
+<title>Home</title>
+<h1>To Subtract Enter Numbers</h1>
+<form action="subtract" method="post">
+    {% csrf_token %}
+    <label>First number</label><br>
+    <input type="number" name="num1"><br>
+    <label>Second number</label><br>
+    <input type="number" name="num2"><br>
+    <label>Third Number</label><br>
+    <input type="number" name="num3"><br>
+    <input type="submit"><br>
+</form>
+
+{%endblock%}
